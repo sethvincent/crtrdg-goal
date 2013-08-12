@@ -1,0 +1,33 @@
+{
+  "name": "crtrdg-goal",
+  "version": "0.0.0",
+  "description": "achievements module for crtrdg games",
+  "main": "index.js",
+  "scripts": {
+    "test": "beefy test.js:bundle.js --live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sethvincent/crtrdg-goal.git"
+  },
+  "keywords": [
+    "games",
+    "canvas",
+    "game library",
+    "achievements",
+    "crtrdg"
+  ],
+  "author": {
+    "name": "Seth Vincent",
+    "email": "sethvincent@gmail.com",
+    "url": "http://sethvincent.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "inherits": "~2.0.0"
+  },
+  "devDependencies": {
+    "crtrdg-gameloop": "~0.0.3",
+    "crtrdg-mouse": "~0.0.1"
+  }
+}
