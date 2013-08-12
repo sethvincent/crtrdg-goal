@@ -1,7 +1,9 @@
 var EventEmitter = require('events').EventEmitter;
 var inherits = require('inherits');
 
-module.exports = Goals;
+module.exports = function (game){
+  return new Goals(game);
+};
 
 function Goals(game){
   this.game = game || {};
@@ -13,6 +15,8 @@ function Goals(game){
 Goals.prototype.create = function create(settings){
   var goal = new Goal(settings);
   this.game.goals[goal.name] = goal;
+
+  return goal;
 };
 
 Goals.prototype.all = function all(){
